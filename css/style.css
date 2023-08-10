@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+:root{
+    --primary-color : #DF1B27;
+    --title-color : #fff;
+    --parra-color : #fff;
+    --titulos: 40px;
+    --subtilos: 30px;
+    --minititulo: 22px;
+    --parrafos : 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../img/bg-inicio.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header nav{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    /* Alinear los hijos de contenedor padre */
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 25px;
+}
+header nav .logo{
+    transition: .5s;
+}
+header nav .logo:hover{
+    transform: scale(1.1);
+}
+
+header nav .menu{
+    display: flex;
+}
+nav .menu li{
+    margin: 0 5px;
+    list-style: none;
+}
+.menu li a{
+    color: #ffffff;
+    font-size: var(--parrafos);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.menu li a:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+header #hero{
+    width: 50%;
+    min-width: 650px;
+    margin: 95px auto;
+    text-align: center;
+}
+header #hero img{
+    transition: .5s;
+    cursor: pointer;
+}
+header #hero img:hover{
+    transform: rotatey(180deg);
+}
+header #hero h1{
+    color: var(--title-color);
+    font-size: var(--titulos);
+}
+header #hero p{
+    color: #fff;
+    font-size: var(--parrafos);
+}
+header #hero button{
+    margin-top: 60px;
+    background: var(--primary-color);
+    padding: 5px 10px;
+    color: #fff;;
+    font-size: 23px;
+    border-radius: 6px;
+    transition: .5s;
+    cursor: pointer;
+} 
+header #hero button:hover{
+    background: #0000007c;
+
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+#menu{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+    background: url(../img/bgwhite.png);
+}
+#menu h2{
+    color: #dd0513;
+    font-size: var(--titulos);
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+#menu .h{
+    font-size: var(--minititulo);
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+#menu p{
+    font-size: var(--parrafos);
+    color: #000;
+    margin-bottom: 5px;
+}
+#menu .fila{
+    width: 70%;
+    min-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+#menu button{
+    background: #ff0011b6;
+    color: var(--parra-color);
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 8px 3px;
+    border: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#menu button:hover{
+    background:#dd0513;
+}
+.fila .col-menu{
+    transition: .4s ;
+}
+.fila .col-menu:hover{
+    transform: scale(1.1);
+}
+
+#menu2{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+    background: url(../img/bg-red.png);
+}
+#menu2 .O{
+    color:var(--title-color);
+    font-size: var(--titulos);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#menu2 p{
+    font-size: var(--parrafos);
+    color: var(--parra-color);
+    margin-bottom: 5px;
+}
+#menu2 h3{
+    font-size: var(--parrafos);
+    color: var(--parra-color);
+    margin-bottom: 5px;
+}
+#menu2 .fila{
+    width: 70%;
+    min-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+#menu2 button{
+    background: #ffffffdc;
+    color: var(--primary-color);
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 8px 3px;
+    border: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#menu2 button:hover{
+    background: #fff;;
+}
+.fila .col-otros{
+    transition: .4s ;
+}
+.fila .col-otros:hover{
+    transform: scale(1.1);
+}
+
+#menu3{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background: url(../img/bgwhite.png);   
+}
+
+#menu3 .p{
+    color: #dd0513;
+    font-size: var(--titulos);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#menu3 p{
+    font-size: var(--minititulo);
+    color:#000;
+}
+#menu3 h3{
+    font-size: var(--titulos);
+    color: #000;
+    margin-bottom: 5px;
+}
+#menu3 .fila{
+    width: 70%;
+    min-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+#menu3 .fila .col-promo1{
+    margin: 150px 100px;
+}
+#menu3 button{
+    background: #ff0011b6;
+    color: var(--parra-color);
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 8px 3px;
+    border: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#menu3 button:hover{
+    background:#dd0513;
+}
+
+/* Localizacio estilos */
+#localizacion{
+    width: 100%;
+    text-align: center;
+    padding: 70px 0;
+    background:url(../img/bg-loca.jpg);
+}
+#localizacion .d{
+    color:var(--title-color);
+    font-size: var(--titulos);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#localizacion .lu{
+    color:var(--title-color);
+    font-size: var(--minititulo);
+    font-weight: 700;
+    margin-bottom: 10px;
+}#localizacion .ls{
+    color:var(--title-color);
+    font-size: var(--minititulo);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#localizacion p{
+    font-size: var(--parrafos);
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#localizacion .fila{
+    width: 70%;
+    min-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.fila .col-loca{
+    transition: .4s ;
+}
+.fila .col-loca:hover{
+    transform: scale(1.1);
+}
+
+/* Reservar */
+#reservacion{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 100px 0 120px;
+    background: url(../img/bg-res.png);
+}
+
+#reservacion .rs{
+    color:#fff;
+    font-size: var(--titulos);
+    margin-bottom: 40px;
+}
+
+#reservacion .r{
+    font-size: var(--parrafos);
+    margin-bottom: 40px;
+    color:#fff;
+}
+
+#reservacion form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#reservacion form .fila{
+    display: flex;
+}
+
+form .fila input{
+    width: 50%;
+    padding: 8px 12px;
+    font-size: var(--parrafos);
+    margin: 10px 20px
+}
+
+form .fila select{
+    width: 53%;
+    padding: 8px 12px;
+    font-size: var(--parrafos);
+    margin: 10px 20px
+}
+
+form button{
+    background: #ffffff;
+    color: #ff0000;
+    margin-top: 40px;
+    padding: 12px 20px;
+    font-size: 22px;
+    border-radius: 4px;
+    border: transparent;
+}
